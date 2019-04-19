@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>上传图片</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Movie_store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="../static/js/movies.js"></script>
+<!-- start plugins -->
+    <script type="text/javascript" src="../static/js/jquery-1.11.1.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+</head>
+<body style="background-image:url(/static/images/h.jpg);width:100%;height:1000px;padding:0;background-size: 100%;">
+	<div class="recent" style="margin:50px auto;text-align: center;font-size:40px;color:blue;"><p>猫狗大战</p></div>
+                   <ul id="flexiselDemo3" style="">
+						<li><img src="/static/images/1.jpg" class="img-responsive"/></li>
+						<li><img src="/static/images/2.jpg" class="img-responsive"/></li>
+						<li><img src="/static/images/3.jpg" class="img-responsive"/></li>
+						<li><img src="/static/images/4.jpg" class="img-responsive"/></li>
+						<li><img src="/static/images/5.jpg" class="img-responsive"/></li>
+						<li><img src="/static/images/6.jpg" class="img-responsive"/></li>
+				    </ul>
+				    <script type="text/javascript">
+					 $(window).load(function() {
+						$("#flexiselDemo3").flexisel({
+							visibleItems: 4,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+					    	responsiveBreakpoints: {
+					    		portrait: {
+					    			changePoint:480,
+					    			visibleItems: 1
+					    		},
+					    		landscape: {
+					    			changePoint:640,
+					    			visibleItems: 2
+					    		},
+					    		tablet: {
+					    			changePoint:768,
+					    			visibleItems: 3
+					    		}
+					    	}
+					    });
+
+					});
+				   </script>
+				   <script type="text/javascript" src="/static/js/jquery.flexisel.js"></script>
+
+
+
+				 <div style="margin:0 auto;text-align:center;margin-top:100px;">
+					<form action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+						<p style="margin: 0 auto;margin-bottom: 20px;"><input type="file" name="f" style="display: inline"></p>
+						<p><input type="submit" value = "上传" class="upb"> </p>
+                    </form>
+                 </div>
+
+</body>
+</html>
