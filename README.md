@@ -8,7 +8,7 @@ https://www.kaggle.com/c/dogs-vs-cats
 数据集由训练数据和测试数据组成，训练数据包含猫和狗各12500张图片，测试数据包含12500张猫和狗的图片。
 
 
-![数据](C:\\Users\\ljn\\Desktop\\URKJ[103ET2N1V2C6SVBU}6.png)
+![数据](https://github.com/q494892202/Cat-vs-dog/blob/master/img/URKJ%5B103ET2N1V2C6SVBU%7D6.png)
 
 
 在这里我们只需要训练集，训练集中包括猫狗图像25000张，数据太多了而且猫狗的图像都在一个文件夹中，只于图像的名字区分，很不利于我们制作训练集啊，因此我们写了一个简单的程序从训练集中取1000张图像，并将猫狗分别保存到文件夹内，对了为了方便大家单独新建个文件夹用于保存分类后的图像，可以参考下面代码中的路径。
@@ -53,14 +53,14 @@ VGG16 网络由ImageNet数据集训练1000类得到，所有最后一层全连�
 6）创建Django项目，编写对应的上传图片的uploadImg.html网页，和上传图片后进行识别反馈的show.html
 
 
-
+![首页](https://github.com/q494892202/Cat-vs-dog/blob/master/img/O8S%7BKQ%25C%25%40R%24S2%60LP%245UQ5L.png)
 
 
 选择识别图片。
 
 
 
-
+![选择图片](https://github.com/q494892202/Cat-vs-dog/blob/master/img/8LUE_S%60DAJ%60%24X%7DT%5BH~2_N%7DY.png)
 
 
 
@@ -68,7 +68,7 @@ VGG16 网络由ImageNet数据集训练1000类得到，所有最后一层全连�
 
 
 
-
+![结果展示](https://github.com/q494892202/Cat-vs-dog/blob/master/img/%25FX%60XJ0W_W%40AC%5B%24BIE%24OVOF.png)
 
 
 
